@@ -4,10 +4,6 @@ import java.util.List;
 
 
 public class Task {
-    public static final String insertNewTASK = "INSERT INTO tasks (task_name,task_body,fk_users_id) VALUES (?,?,?)";
-    public static final String query = "SELECT * FROM users WHERE user_username = ?";
-    public static final String query3 = "SELECT * FROM tasks";
-
     private Long id;
     private String title;
     private String description;
@@ -18,6 +14,13 @@ public class Task {
     }
 
     public Task(Long id, String title, String description, Long user_id, List<User> users) {
+        this.id = id;
+        this.title = title;
+        this.description = description;
+        this.user_id = user_id;
+        this.users = users;
+    }
+    public Task(Long id, String title, String description, Long user_id) {
         this.id = id;
         this.title = title;
         this.description = description;

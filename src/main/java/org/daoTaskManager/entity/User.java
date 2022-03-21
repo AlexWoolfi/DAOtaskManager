@@ -55,31 +55,7 @@ public class User {
 
 
 
-//    public static void addUserToDB(List<String> listUser, String s) throws SQLException {
-//        String name = listUser.get(0);
-//        String lastName = listUser.get(1);
-//        String user_name = listUser.get(2);
-//        System.out.println(name);
-//        System.out.println(lastName);
-//        System.out.println(user_name);
-//        s = insertNewUser;
-//        Connection connection = null;
-//        PreparedStatement st = null;
-//        try {
-//            connection = ConnectionToPostgress.INSTANCE.startConnection();
-//            st = connection.prepareStatement(s);
-//            st.setString(1, name);
-//            st.setString(2, lastName);
-//            st.setString(3, user_name);
-//            int row = st.executeUpdate();
-//        } catch (SQLException e) {
-//            System.err.format("SQL State: %s\n%s", e.getSQLState(), e.getMessage());
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
-//
-//
+
 //    public static void showAllusers() {
 ////        Connection con = ConnectionToPostgress.startConnection();
 //        Connection con = SingeltonToDb.connectSingleToBD();
