@@ -1,14 +1,12 @@
 package org.daoTaskManager.entity;
 
 
-
 public class User {
 
     private Long id;
     private String userName;
     private String name;
     private String lastName;
-
 
 
     public User(Long id, String userName, String name, String lastName) {
@@ -52,35 +50,6 @@ public class User {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
-
-
-
-//    public static void showAllusers() {
-////        Connection con = ConnectionToPostgress.startConnection();
-//        Connection con = SingeltonToDb.connectSingleToBD();
-//        String query = "SELECT * FROM users";
-//        try (Statement statement = con.createStatement()) {
-//            statement.executeQuery(query);
-//            ResultSet resultSet = statement.executeQuery(query);
-//          List<User> users = new ArrayList<>();
-//            while (resultSet.next()) {
-//                long id = resultSet.getLong("user_id");
-//                String userName = resultSet.getString("user_name");
-//                String firstName = resultSet.getString("user_lastname");
-//                String lastName = resultSet.getString("user_username");
-//
-//                users.add(new User(id, userName, firstName, lastName));
-//            }
-//               for(User u:users){
-//                   System.out.println(u);
-//               }
-//
-//        } catch (SQLException throwables) {
-//
-//        }
-//    }
-
 
     @Override
     public String toString() {

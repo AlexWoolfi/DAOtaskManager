@@ -22,7 +22,7 @@ public class UserDaoImpl implements UserDao {
         try {
             Connection connection = SingeltonToDb.connectSingleToBD();
             PreparedStatement preparedStatement = connection.prepareStatement(query);
-            preparedStatement.setString(1,nameParam);
+            preparedStatement.setString(1, nameParam);
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 user.setId(resultSet.getLong(1));
@@ -43,7 +43,7 @@ public class UserDaoImpl implements UserDao {
     public List<User> showAllusersFromDB() {
         String showAllusersQuery = "SELECT * FROM users";
         List<User> users = new ArrayList<>();
-        try{
+        try {
             Connection connection = SingeltonToDb.connectSingleToBD();
             PreparedStatement preparedStatement = connection.prepareStatement(showAllusersQuery);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -52,7 +52,7 @@ public class UserDaoImpl implements UserDao {
                 String name = resultSet.getString(2);
                 String lastName = resultSet.getString(3);
                 String UnicName = resultSet.getString(3);
-                users.add(new User(id,name,lastName,UnicName));
+                users.add(new User(id, name, lastName, UnicName));
             }
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -64,7 +64,7 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public  void AddUserToDB(String user_name,String user_lastname,String user_unicname) {
+    public void AddUserToDB(String user_name, String user_lastname, String user_unicname) {
         String insertNewUser = "INSERT INTO users (username,userlastname,userunicname) VALUES (?,?,?)";
         String userName = user_name;
         String userLastname = user_lastname;
@@ -73,9 +73,9 @@ public class UserDaoImpl implements UserDao {
         try {
             Connection connection = SingeltonToDb.connectSingleToBD();
             PreparedStatement preparedStatement = connection.prepareStatement(insertNewUser);
-            preparedStatement.setString(1,userName);
-            preparedStatement.setString(2,userLastname);
-            preparedStatement.setString(3,userUnicname);
+            preparedStatement.setString(1, userName);
+            preparedStatement.setString(2, userLastname);
+            preparedStatement.setString(3, userUnicname);
             preparedStatement.executeUpdate();
 
         } catch (SQLException throwables) {

@@ -17,7 +17,7 @@ public class UserServiceImpl implements UserService {
         user.setLastName(Patterns.cleanWorldArgs(args[2]));
         user.setUserName(Patterns.cleanWorldArgs(args[3]));
         UserDao userDao = new UserDaoImpl();
-        userDao.AddUserToDB(user.getName(),user.getLastName(),user.getUserName());
+        userDao.AddUserToDB(user.getName(), user.getLastName(), user.getUserName());
     }
 
     @Override
@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
         UserDao userDao = new UserDaoImpl();
         List<User> users = new ArrayList<>();
         users = userDao.showAllusersFromDB();
-        for(User u:users) {
+        for (User u : users) {
             System.out.println("----------------------------------");
             System.out.println(u);
         }

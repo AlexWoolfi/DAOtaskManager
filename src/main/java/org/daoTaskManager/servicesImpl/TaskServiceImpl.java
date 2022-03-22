@@ -19,14 +19,14 @@ public class TaskServiceImpl implements TaskService {
         TaskDao taskDao = new TaskDaoImpl();
         List<Task> tasks = new ArrayList<>();
         tasks = taskDao.showTasksfromUnicUser(userName);
-        for(Task t:tasks) {
+        for (Task t : tasks) {
             System.out.println("-------------------");
             System.out.println(t);
         }
     }
 
     @Override
-    public void createTaskFromDB(String[]args) {
+    public void createTaskFromDB(String[] args) {
         UserDao userDao = new UserDaoImpl();
         TaskDao taskDao = new TaskDaoImpl();
 
@@ -35,7 +35,7 @@ public class TaskServiceImpl implements TaskService {
         String taskBody = Patterns.cleanWorldArgs(args[3]);
         long userId = userDao.getUserid(username);
 
-        taskDao.addTaskToDB(taskName,taskBody,userId);
+        taskDao.addTaskToDB(taskName, taskBody, userId);
 
     }
 
