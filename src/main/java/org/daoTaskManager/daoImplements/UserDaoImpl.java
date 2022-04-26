@@ -3,7 +3,6 @@ package org.daoTaskManager.daoImplements;
 import org.daoTaskManager.conectDB.SingeltonToDb;
 import org.daoTaskManager.dao.UserDao;
 import org.daoTaskManager.entity.User;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -11,7 +10,9 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class UserDaoImpl implements UserDao {
+//    private static final Logger log = LoggerFactory.getLogger(UserDaoImpl.class);
 
     @Override
     public long getUserid(String s) {
@@ -32,8 +33,10 @@ public class UserDaoImpl implements UserDao {
 
             }
 
-        } catch (SQLException throwables) {
-            throwables.printStackTrace();
+        }  catch (SQLException exception) {
+
+            exception.getMessage();
+//            log.info("What happened");
         }
         id = user.getId();
         return id;
@@ -78,9 +81,17 @@ public class UserDaoImpl implements UserDao {
             preparedStatement.setString(3, userUnicname);
             preparedStatement.executeUpdate();
 
-        } catch (SQLException throwables) {
+        }
+//        catch (PSQLException psqlException) {
+//                psqlException.getMessage();
+//                log.info("That user was add long time ago");
+//
+//            }
+        catch (SQLException throwables) {
             throwables.printStackTrace();
             System.err.format("SQL State: %s\n%s", throwables.getSQLState(), throwables.getMessage());
         }
+
+        }
     }
-}
+

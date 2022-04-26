@@ -39,8 +39,5 @@ public class TaskServiceImpl implements TaskService {
 
     }
 
-    @Override
-    public List<Task> getAllTasksFromDB() {
-        return null;
-    }
+
 }
