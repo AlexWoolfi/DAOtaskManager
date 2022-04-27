@@ -27,24 +27,19 @@ public class ComandExecuter {
         }
         switch (s) {
             case "createUser":
-                System.out.println("Ok create");
                 userService.createUser(args);
                 break;
             case "showAllUsers":
-                userLogger.info("-------------------");
-                userLogger.info("ShowAllUsers {}");
                 userService.showAllUsers();
                 break;
             case "addTask":
-                System.out.println("addTask");
                 taskService.createTaskFromDB(args);
                 break;
             case "showTasks":
-                System.out.println("showTasks");
                 taskService.showAllTasksOnUserID(args);
                 break;
             default:
-                System.out.println("Command not use, try again");
+                userLogger.info("Command not use, try again");
 
         }
     }
