@@ -33,3 +33,53 @@
 26/апр./2022 12:59:26,827- ComandExecuter: ComandExecuter is started
 26/апр./2022 12:59:26,842- ComandExecuter: -------------------
 26/апр./2022 12:59:26,842- ComandExecuter: ShowAllUsers {}
+27/апр./2022 16:25:15,495- App: Main is starred
+27/апр./2022 16:25:15,495- App: +
+27/апр./2022 16:25:15,510- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:27:29,243- App: Main is starred
+27/апр./2022 16:27:29,243- App: +
+27/апр./2022 16:27:29,243- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:28:47,228- App: Main is starred
+27/апр./2022 16:28:47,228- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:37:56,276- App: Main is starred
+27/апр./2022 16:37:56,276- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:41:30,407- App: Main is starred
+27/апр./2022 16:41:30,409- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:41:40,645- App: Main is starred
+27/апр./2022 16:41:40,650- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:41:41,239- TaskDaoImpl: The connection was successful
+27/апр./2022 16:41:41,240- TaskDaoImpl: The connection was successful
+27/апр./2022 16:42:07,059- App: Main is starred
+27/апр./2022 16:42:07,062- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:42:07,593- TaskDaoImpl: The connection was successful
+27/апр./2022 16:44:10,665- App: Main is starred
+27/апр./2022 16:44:10,668- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:44:11,126- TaskDaoImpl: The connection was successful
+27/апр./2022 16:45:30,327- App: Main is starred
+27/апр./2022 16:45:30,330- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:45:30,784- TaskDaoImpl: The connection was successful
+27/апр./2022 16:51:51,707- App: Main is starred
+27/апр./2022 16:51:51,711- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:51:52,152- TaskDaoImpl: The connection was successful
+27/апр./2022 16:51:52,162- TaskDaoImpl: Connection failed
+27/апр./2022 16:52:31,979- App: Main is starred
+27/апр./2022 16:52:31,982- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:52:32,437- TaskDaoImpl: Connection failed
+27/апр./2022 16:52:53,890- App: Main is starred
+27/апр./2022 16:52:53,893- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:52:54,321- TaskDaoImpl: Connection failed
+27/апр./2022 16:53:08,723- App: Main is starred
+27/апр./2022 16:53:08,726- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:53:09,294- TaskDaoImpl: The connection was successful
+27/апр./2022 16:53:51,038- App: Main is starred
+27/апр./2022 16:53:51,041- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:53:51,597- TaskDaoImpl: The connection was successful
+27/апр./2022 16:55:13,336- App: Main is starred
+27/апр./2022 16:55:13,339- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:55:13,777- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+27/апр./2022 16:56:58,095- App: Main is starred
+27/апр./2022 16:56:58,098- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:56:58,571- TaskDaoImpl: The connection from method "addTaskToDB"  was successful
+27/апр./2022 16:57:11,216- App: Main is starred
+27/апр./2022 16:57:11,219- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:57:11,665- TaskDaoImpl: Connection from method "addTaskToDB" failed

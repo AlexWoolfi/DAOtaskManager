@@ -1,5 +1,6 @@
 package org.daoTaskManager.daoImplements;
 
+import org.apache.log4j.Logger;
 import org.daoTaskManager.conectDB.SingeltonToDb;
 import org.daoTaskManager.dao.TaskDao;
 import org.daoTaskManager.dao.UserDao;
@@ -12,7 +13,10 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
+
 public class TaskDaoImpl implements TaskDao {
+    private static final Logger userLogger = Logger.getLogger(getCurrentClassName());
     @Override
     public List<Task> showTasksfromUnicUser(String s) {
         UserDao userDao = new UserDaoImpl();
@@ -32,8 +36,10 @@ public class TaskDaoImpl implements TaskDao {
                 long idUser = resultSet.getLong(4);
                 tasks.add(new Task(idTask, taskName, taskBody, idUser));
             }
+            userLogger.debug("The connection from method \"showTasksfromUnicUser\"  was successful");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            userLogger.error("Connection from method \"showTasksfromUnicUser\" failed");
         }
         return tasks;
     }
@@ -55,8 +61,10 @@ public class TaskDaoImpl implements TaskDao {
             preparedStatement.setString(2, taskBody);
             preparedStatement.setLong(3, id);
             preparedStatement.executeUpdate();
+            userLogger.debug("The connection from method \"addTaskToDB\"  was successful");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            userLogger.error("Connection from method \"addTaskToDB\" failed");
         }
 
     }

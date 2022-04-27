@@ -1,0 +1,10 @@
+27/апр./2022 16:45:30,784- TaskDaoImpl: The connection was successful
+27/апр./2022 16:51:52,152- TaskDaoImpl: The connection was successful
+27/апр./2022 16:51:52,162- TaskDaoImpl: Connection failed
+27/апр./2022 16:52:32,437- TaskDaoImpl: Connection failed
+27/апр./2022 16:52:54,321- TaskDaoImpl: Connection failed
+27/апр./2022 16:53:09,294- TaskDaoImpl: The connection was successful
+27/апр./2022 16:53:51,597- TaskDaoImpl: The connection was successful
+27/апр./2022 16:55:13,777- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+27/апр./2022 16:56:58,571- TaskDaoImpl: The connection from method "addTaskToDB"  was successful
+27/апр./2022 16:57:11,665- TaskDaoImpl: Connection from method "addTaskToDB" failed

@@ -12,7 +12,6 @@ public class App
 
     public static void main( String[] args ) throws IOException {
         userLogger.info("Main is starred");
-        userLogger.info("+");
         ComandExecuter.filtrFromArgs(args);
     }
 }
