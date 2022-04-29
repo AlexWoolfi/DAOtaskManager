@@ -83,3 +83,74 @@
 27/апр./2022 16:57:11,216- App: Main is starred
 27/апр./2022 16:57:11,219- ComandExecuter: ComandExecuter is started
 27/апр./2022 16:57:11,665- TaskDaoImpl: Connection from method "addTaskToDB" failed
+29/апр./2022 10:02:04,819- App: Main is starred
+29/апр./2022 10:02:04,854- ComandExecuter: ComandExecuter is started
+29/апр./2022 10:58:28,126- App: Main is starred
+29/апр./2022 10:58:28,126- ComandExecuter: ComandExecuter is started
+29/апр./2022 10:58:28,500- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:00:42,970- App: Main is starred
+29/апр./2022 11:00:42,970- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:00:43,356- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:01:29,897- App: Main is starred
+29/апр./2022 11:01:29,902- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:09:32,865- App: Main is starred
+29/апр./2022 11:09:32,865- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:09:33,253- UserDaoImpl: Connection from method "AddUserToDB" failed
+org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at org.daoTaskManager.daoImplements.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
+	at org.daoTaskManager.servicesImpl.UserServiceImpl.createUser(UserServiceImpl.java:20)
+	at org.daoTaskManager.utils.ComandExecuter.filtrFromArgs(ComandExecuter.java:30)
+	at org.daoTaskManager.App.main(App.java:15)
+29/апр./2022 11:11:06,871- App: Main is starred
+29/апр./2022 11:11:06,873- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:11:07,273- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:36:58,905- App: Main is starred
+29/апр./2022 11:36:58,910- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:36:59,300- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:40:25,928- App: Main is starred
+29/апр./2022 11:40:25,928- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:40:26,344- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр/2022 11:40:59,807- App: Main is starred
+29/апр/2022 11:40:59,807- ComandExecuter: ComandExecuter is started
+29/апр/2022 11:41:00,495- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр/2022 11:41:25,608- App: Main is starred
+29/апр/2022 11:41:25,608- ComandExecuter: ComandExecuter is started
+29/апр/2022 11:41:26,016- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр./2022 11:46:41,278- App: Main is starred
+29/апр./2022 11:46:41,278- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:46:41,654- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:46:41,654- UserServiceImpl: The method "showAllUsers"
+29/апр./2022 11:46:59,291- App: Main is starred
+29/апр./2022 11:46:59,291- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:46:59,661- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:46:59,661- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:54:50,782- App: Main is starred
+29/апр./2022 11:54:50,797- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:54:51,166- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:54:51,166- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:54:55,861- App: Main is starred
+29/апр./2022 11:54:55,877- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:54:56,252- UserDaoImpl: The connection from method "getUserid"  was successful
+29/апр./2022 11:54:56,252- UserDaoImpl: User ID was received from method "getUserid"  was successful1
+29/апр./2022 11:54:56,312- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+29/апр./2022 11:54:56,312- TaskServiceImpl: Method showAllTasksOnUserID is done
+29/апр./2022 12:03:22,648- App: Main is starred
+29/апр./2022 12:03:22,648- ComandExecuter: ComandExecuter is started
+29/апр./2022 12:03:23,031- UserDaoImpl: The connection from method "getUserid"  was successful
+29/апр./2022 12:03:23,031- UserDaoImpl: User ID was received from method "getUserid"  was successful1
+29/апр./2022 12:03:23,078- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+29/апр./2022 12:03:23,078- TaskServiceImpl: Method showAllTasksOnUserID is done
+29/апр./2022 12:03:23,078- ComandExecuter: showTasks is done

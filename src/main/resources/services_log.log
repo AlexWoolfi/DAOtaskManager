@@ -48,3 +48,38 @@
 27/апр./2022 16:57:11,216- App: Main is starred
 27/апр./2022 16:57:11,219- ComandExecuter: ComandExecuter is started
 27/апр./2022 16:57:11,665- TaskDaoImpl: Connection from method "addTaskToDB" failed
+29/апр./2022 10:02:04,819- App: Main is starred
+29/апр./2022 10:02:04,854- ComandExecuter: ComandExecuter is started
+29/апр./2022 10:58:28,126- App: Main is starred
+29/апр./2022 10:58:28,126- ComandExecuter: ComandExecuter is started
+29/апр./2022 10:58:28,500- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:00:42,970- App: Main is starred
+29/апр./2022 11:00:42,970- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:00:43,356- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:01:29,897- App: Main is starred
+29/апр./2022 11:01:29,902- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:09:32,865- App: Main is starred
+29/апр./2022 11:09:32,865- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:09:33,253- UserDaoImpl: Connection from method "AddUserToDB" failed
+org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at org.daoTaskManager.daoImplements.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
+	at org.daoTaskManager.servicesImpl.UserServiceImpl.createUser(UserServiceImpl.java:20)
+	at org.daoTaskManager.utils.ComandExecuter.filtrFromArgs(ComandExecuter.java:30)
+	at org.daoTaskManager.App.main(App.java:15)
+29/апр./2022 11:11:06,871- App: Main is starred
+29/апр./2022 11:11:06,873- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:11:07,273- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:46:41,654- UserServiceImpl: The method "showAllUsers"
+29/апр./2022 11:46:59,661- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:54:51,166- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:54:56,312- TaskServiceImpl: Method showAllTasksOnUserID is done
+29/апр./2022 12:03:23,078- TaskServiceImpl: Method showAllTasksOnUserID is done

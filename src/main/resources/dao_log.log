@@ -8,3 +8,38 @@
 27/апр./2022 16:55:13,777- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
 27/апр./2022 16:56:58,571- TaskDaoImpl: The connection from method "addTaskToDB"  was successful
 27/апр./2022 16:57:11,665- TaskDaoImpl: Connection from method "addTaskToDB" failed
+29/апр./2022 10:58:28,500- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:00:43,356- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:09:33,253- UserDaoImpl: Connection from method "AddUserToDB" failed
+org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at org.daoTaskManager.daoImplements.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
+	at org.daoTaskManager.servicesImpl.UserServiceImpl.createUser(UserServiceImpl.java:20)
+	at org.daoTaskManager.utils.ComandExecuter.filtrFromArgs(ComandExecuter.java:30)
+	at org.daoTaskManager.App.main(App.java:15)
+29/апр./2022 11:11:07,273- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:36:59,300- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:40:26,344- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр/2022 11:41:00,495- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр/2022 11:41:26,016- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр./2022 11:46:41,654- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+29/апр./2022 11:46:59,661- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:54:51,166- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:54:56,252- UserDaoImpl: The connection from method "getUserid"  was successful
+29/апр./2022 11:54:56,252- UserDaoImpl: User ID was received from method "getUserid"  was successful1
+29/апр./2022 11:54:56,312- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+29/апр./2022 12:03:23,031- UserDaoImpl: The connection from method "getUserid"  was successful
+29/апр./2022 12:03:23,031- UserDaoImpl: User ID was received from method "getUserid"  was successful1
+29/апр./2022 12:03:23,078- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful

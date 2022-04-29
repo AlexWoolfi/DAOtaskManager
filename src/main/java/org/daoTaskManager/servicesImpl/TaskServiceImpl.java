@@ -1,5 +1,6 @@
 package org.daoTaskManager.servicesImpl;
 
+import org.apache.log4j.Logger;
 import org.daoTaskManager.dao.TaskDao;
 import org.daoTaskManager.dao.UserDao;
 import org.daoTaskManager.daoImplements.TaskDaoImpl;
@@ -11,8 +12,10 @@ import org.daoTaskManager.utils.Patterns;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TaskServiceImpl implements TaskService {
+import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
 
+public class TaskServiceImpl implements TaskService {
+    Logger logger = Logger.getLogger(getCurrentClassName());
     @Override
     public void showAllTasksOnUserID(String[] args) {
         String userName = Patterns.cleanWorldArgs(args[1]);
@@ -23,6 +26,7 @@ public class TaskServiceImpl implements TaskService {
             System.out.println("-------------------");
             System.out.println(t);
         }
+        logger.info("Method showAllTasksOnUserID is done");
     }
 
     @Override
@@ -36,7 +40,7 @@ public class TaskServiceImpl implements TaskService {
         long userId = userDao.getUserid(username);
 
         taskDao.addTaskToDB(taskName, taskBody, userId);
-
+        logger.info("Method createTaskFromDB is done");
     }
 
 

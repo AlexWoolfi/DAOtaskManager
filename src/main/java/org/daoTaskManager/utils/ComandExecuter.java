@@ -6,7 +6,6 @@ import org.daoTaskManager.servicesImpl.TaskServiceImpl;
 import org.daoTaskManager.servicesImpl.UserServiceImpl;
 import org.daoTaskManager.sevices.UserService;
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.util.logging.Filter;
 import java.util.logging.LogRecord;
 
@@ -17,29 +16,33 @@ public class ComandExecuter {
     static String s = new String();
     private static UserService userService = new UserServiceImpl();
     private static TaskServiceImpl taskService = new TaskServiceImpl();
-    private static final Logger userLogger = Logger.getLogger(getCurrentClassName());
-//    private static LocalDateTime dt = LocalDateTime.now();
+    private static final Logger logger = Logger.getLogger(getCurrentClassName());
+
 
     public static void filtrFromArgs(String[] args) throws IOException {
-        userLogger.info("ComandExecuter is started");
+        logger.info("ComandExecuter is started");
         for (int i = 0; i < args.length; i++) {
             s = Patterns.cleanWorldForFirstArgs(args[0]);
         }
         switch (s) {
             case "createUser":
                 userService.createUser(args);
+                logger.info("createUser is done");
                 break;
             case "showAllUsers":
                 userService.showAllUsers();
+                logger.info("showAllUsers is done");
                 break;
             case "addTask":
                 taskService.createTaskFromDB(args);
+                logger.info("addTask is done");
                 break;
             case "showTasks":
                 taskService.showAllTasksOnUserID(args);
+                logger.info("showTasks is done");
                 break;
             default:
-                userLogger.info("Command not use, try again");
+                logger.info("Command not use, try again");
 
         }
     }

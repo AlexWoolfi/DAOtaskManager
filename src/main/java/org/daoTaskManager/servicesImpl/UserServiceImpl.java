@@ -1,5 +1,6 @@
 package org.daoTaskManager.servicesImpl;
 
+import org.apache.log4j.Logger;
 import org.daoTaskManager.dao.UserDao;
 import org.daoTaskManager.daoImplements.UserDaoImpl;
 import org.daoTaskManager.entity.User;
@@ -9,7 +10,10 @@ import org.daoTaskManager.utils.Patterns;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
+
 public class UserServiceImpl implements UserService {
+    Logger logger = Logger.getLogger(getCurrentClassName());
     @Override
     public void createUser(String[] args) {
         User user = new User();
@@ -18,6 +22,7 @@ public class UserServiceImpl implements UserService {
         user.setUserName(Patterns.cleanWorldArgs(args[3]));
         UserDao userDao = new UserDaoImpl();
         userDao.AddUserToDB(user.getName(), user.getLastName(), user.getUserName());
+        logger.info("Was got data from configuration, method createUser");
     }
 
     @Override
@@ -29,5 +34,6 @@ public class UserServiceImpl implements UserService {
             System.out.println("----------------------------------");
             System.out.println(u);
         }
+        logger.info("The method \"showAllUsers\"");
     }
 }

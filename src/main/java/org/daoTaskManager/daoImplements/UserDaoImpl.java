@@ -1,8 +1,11 @@
 package org.daoTaskManager.daoImplements;
 
+import org.apache.log4j.Logger;
 import org.daoTaskManager.conectDB.SingeltonToDb;
 import org.daoTaskManager.dao.UserDao;
 import org.daoTaskManager.entity.User;
+import org.postgresql.util.PSQLException;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -10,9 +13,11 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
+
 
 public class UserDaoImpl implements UserDao {
-//    private static final Logger log = LoggerFactory.getLogger(UserDaoImpl.class);
+    private static final Logger logger = Logger.getLogger(getCurrentClassName());
 
     @Override
     public long getUserid(String s) {
@@ -32,13 +37,14 @@ public class UserDaoImpl implements UserDao {
                 user.setUserName(resultSet.getString(4));
 
             }
-
+            logger.debug("The connection from method \"getUserid\"  was successful");
         }  catch (SQLException exception) {
-
             exception.getMessage();
-//            log.info("What happened");
+            logger.error("Connection from method \"getUserid\" failed");
+
         }
         id = user.getId();
+        logger.debug("User ID was received from method \"getUserid\"  was successful" + id);
         return id;
     }
 
@@ -57,9 +63,10 @@ public class UserDaoImpl implements UserDao {
                 String UnicName = resultSet.getString(3);
                 users.add(new User(id, name, lastName, UnicName));
             }
+            logger.debug("The connection from method \"showAllusersFromDB\"  was successful");
         } catch (SQLException throwables) {
             throwables.printStackTrace();
-            System.err.format("SQL state: %\n%", throwables.getSQLState(), throwables.getMessage());
+            logger.error("Connection from method \"getUserid\" failed");
 
         }
 
@@ -82,14 +89,14 @@ public class UserDaoImpl implements UserDao {
             preparedStatement.executeUpdate();
 
         }
-//        catch (PSQLException psqlException) {
-//                psqlException.getMessage();
-//                log.info("That user was add long time ago");
-//
-//            }
+        catch (PSQLException psqlException) {
+                psqlException.getMessage();
+                logger.error("Connection from method \"AddUserToDB\" failed"+ psqlException);
+
+            }
         catch (SQLException throwables) {
             throwables.printStackTrace();
-            System.err.format("SQL State: %s\n%s", throwables.getSQLState(), throwables.getMessage());
+            logger.error("Connection from method \"AddUserToDB\" failed"+throwables);
         }
 
     }
