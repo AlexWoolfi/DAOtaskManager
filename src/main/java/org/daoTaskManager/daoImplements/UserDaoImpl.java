@@ -35,13 +35,11 @@ public class UserDaoImpl implements UserDao {
                 user.setName(resultSet.getString(2));
                 user.setLastName(resultSet.getString(3));
                 user.setUserName(resultSet.getString(4));
-
             }
             logger.debug("The connection from method \"getUserid\"  was successful");
-        }  catch (SQLException exception) {
+        } catch (SQLException exception) {
             exception.getMessage();
             logger.error("Connection from method \"getUserid\" failed");
-
         }
         id = user.getId();
         logger.debug("User ID was received from method \"getUserid\"  was successful" + id);
@@ -67,9 +65,7 @@ public class UserDaoImpl implements UserDao {
         } catch (SQLException throwables) {
             throwables.printStackTrace();
             logger.error("Connection from method \"getUserid\" failed");
-
         }
-
         return users;
     }
 
@@ -88,15 +84,13 @@ public class UserDaoImpl implements UserDao {
             preparedStatement.setString(3, userUnicname);
             preparedStatement.executeUpdate();
 
-        }
-        catch (PSQLException psqlException) {
-                psqlException.getMessage();
-                logger.error("Connection from method \"AddUserToDB\" failed"+ psqlException);
+        } catch (PSQLException psqlException) {
+            psqlException.getMessage();
+            logger.error("Connection from method \"AddUserToDB\" failed" + psqlException);
 
-            }
-        catch (SQLException throwables) {
+        } catch (SQLException throwables) {
             throwables.printStackTrace();
-            logger.error("Connection from method \"AddUserToDB\" failed"+throwables);
+            logger.error("Connection from method \"AddUserToDB\" failed" + throwables);
         }
 
     }

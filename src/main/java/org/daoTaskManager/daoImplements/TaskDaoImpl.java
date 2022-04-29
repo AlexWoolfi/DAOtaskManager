@@ -17,6 +17,7 @@ import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
 
 public class TaskDaoImpl implements TaskDao {
     private static final Logger logger = Logger.getLogger(getCurrentClassName());
+
     @Override
     public List<Task> showTasksfromUnicUser(String s) {
         UserDao userDao = new UserDaoImpl();
@@ -46,7 +47,6 @@ public class TaskDaoImpl implements TaskDao {
 
     @Override
     public void addTaskToDB(String taskName, String taskBody, long id) {
-
         String insertNewTASK =
                 "CREATE TABLE IF NOT EXISTS tasks" +
                         "(id SERIAL PRIMARY KEY NOT NULL," +

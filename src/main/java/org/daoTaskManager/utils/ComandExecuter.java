@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.daoTaskManager.servicesImpl.TaskServiceImpl;
 import org.daoTaskManager.servicesImpl.UserServiceImpl;
 import org.daoTaskManager.sevices.UserService;
+
 import java.io.IOException;
 import java.util.logging.Filter;
 import java.util.logging.LogRecord;
@@ -46,6 +47,7 @@ public class ComandExecuter {
 
         }
     }
+
     static class MyFilter implements Filter {
         @Override
         public boolean isLoggable(LogRecord record) {
