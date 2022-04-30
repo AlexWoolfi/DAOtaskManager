@@ -154,3 +154,6 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 29/апр./2022 12:03:23,078- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
 29/апр./2022 12:03:23,078- TaskServiceImpl: Method showAllTasksOnUserID is done
 29/апр./2022 12:03:23,078- ComandExecuter: showTasks is done
+29/апр./2022 15:14:26,571- UserDaoImpl: The connection from method "getUserid"  was successful
+29/апр./2022 15:14:26,572- UserDaoImpl: User ID was received from method "getUserid"  was successful1
+29/апр./2022 15:14:26,619- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
