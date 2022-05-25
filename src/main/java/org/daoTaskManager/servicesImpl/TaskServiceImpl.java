@@ -5,8 +5,6 @@ import org.daoTaskManager.dao.TaskDao;
 import org.daoTaskManager.dao.UserDao;
 import org.daoTaskManager.daoFactory.DaoFactory;
 import org.daoTaskManager.daoFactory.DaoFactoryImpl;
-import org.daoTaskManager.daoImplements.TaskDaoImpl;
-import org.daoTaskManager.daoImplements.UserDaoImpl;
 import org.daoTaskManager.entity.Task;
 import org.daoTaskManager.sevices.TaskService;
 import org.daoTaskManager.utils.Patterns;

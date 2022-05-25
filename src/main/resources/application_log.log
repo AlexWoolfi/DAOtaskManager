@@ -284,3 +284,23 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 25/мая/2022 12:33:53,602- TaskDaoImpl: The connection from method "addTaskToDB"  was successful
 25/мая/2022 12:33:53,603- TaskServiceImpl: Method createTaskFromDB is done
 25/мая/2022 12:33:53,603- ComandExecuter: addTask is done
+25/мая/2022 12:47:27,325- App: Main is starred
+25/мая/2022 12:47:27,354- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:47:27,359- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:47:27,731- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+25/мая/2022 12:47:27,731- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:47:27,731- ComandExecuter: showAllUsers is done
+25/мая/2022 13:01:14,928- App: Main is starred
+25/мая/2022 13:01:14,931- ComandExecuter: ComandExecuter is started
+25/мая/2022 13:01:14,935- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 13:01:15,337- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+25/мая/2022 13:01:15,337- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 13:01:15,338- ComandExecuter: showAllUsers is done
+25/мая/2022 13:01:26,291- App: Main is starred
+25/мая/2022 13:01:26,294- ComandExecuter: ComandExecuter is started
+25/мая/2022 13:01:26,300- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 13:01:26,789- UserDaoImpl: The connection from method "getUserid"  was successful
+25/мая/2022 13:01:26,789- UserDaoImpl: User ID was received from method "getUserid"  was successful1
+25/мая/2022 13:01:26,832- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+25/мая/2022 13:01:26,833- TaskServiceImpl: Method showAllTasksOnUserID is done
+25/мая/2022 13:01:26,833- ComandExecuter: showTasks is done

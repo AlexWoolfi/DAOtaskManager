@@ -13,11 +13,9 @@ public class DaoFactoryImpl implements DaoFactory {
     @Override
     public Object createDaoObject(String typeClass) {
         if (typeClass.contains("UserServiceImpl")) {
-            System.out.println("Это оно UserServiceImpl");
             logger.info("Was returned object UserDaoImpl");
             return new UserDaoImpl();
         } else if (typeClass.contains("TaskServiceImpl")) {
-            System.out.println("Это оно TaskServiceImpl");
             logger.info("Was returned object TaskDaoImpl");
             return new TaskDaoImpl();
         } else {

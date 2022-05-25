@@ -1,12 +1,8 @@
 package org.daoTaskManager;
 
 import org.apache.log4j.Logger;
-import org.daoTaskManager.servicesImpl.UserServiceImpl;
-import org.daoTaskManager.sevices.UserService;
 import org.daoTaskManager.utils.ComandExecuter;
-
 import java.io.IOException;
-
 import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
 
 public class App {
@@ -14,8 +10,6 @@ public class App {
 
     public static void main(String[] args) throws IOException {
         logger.info("Main is starred");
-        String s = getCurrentClassName();
-        System.out.println(s);
         ComandExecuter.filtrFromArgs(args);
 
 
