@@ -46,3 +46,12 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 29/апр./2022 15:14:26,571- UserDaoImpl: The connection from method "getUserid"  was successful
 29/апр./2022 15:14:26,572- UserDaoImpl: User ID was received from method "getUserid"  was successful1
 29/апр./2022 15:14:26,619- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+25/мая/2022 10:11:23,018- UserDaoImpl: The connection from method "getUserid"  was successful
+25/мая/2022 10:11:23,019- UserDaoImpl: User ID was received from method "getUserid"  was successful1
+25/мая/2022 10:11:23,070- TaskDaoImpl: The connection from method "showTasksfromUnicUser"  was successful
+25/мая/2022 12:18:07,799- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+25/мая/2022 12:24:06,576- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+25/мая/2022 12:24:32,478- UserDaoImpl: The connection from method "showAllusersFromDB"  was successful
+25/мая/2022 12:33:53,543- UserDaoImpl: The connection from method "getUserid"  was successful
+25/мая/2022 12:33:53,543- UserDaoImpl: User ID was received from method "getUserid"  was successful2
+25/мая/2022 12:33:53,602- TaskDaoImpl: The connection from method "addTaskToDB"  was successful

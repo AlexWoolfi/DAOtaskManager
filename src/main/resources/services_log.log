@@ -83,3 +83,8 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 29/апр./2022 11:54:51,166- UserServiceImpl: Was got data from configuration, method createUser
 29/апр./2022 11:54:56,312- TaskServiceImpl: Method showAllTasksOnUserID is done
 29/апр./2022 12:03:23,078- TaskServiceImpl: Method showAllTasksOnUserID is done
+25/мая/2022 10:11:23,070- TaskServiceImpl: Method showAllTasksOnUserID is done
+25/мая/2022 12:18:07,799- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:24:06,576- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:24:32,479- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:33:53,603- TaskServiceImpl: Method createTaskFromDB is done

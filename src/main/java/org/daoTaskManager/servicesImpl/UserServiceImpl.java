@@ -16,6 +16,8 @@ import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
 
 public class UserServiceImpl implements UserService {
     Logger logger = Logger.getLogger(getCurrentClassName());
+   private static final DaoFactory daoFactory = new DaoFactoryImpl();
+   private String className = getCurrentClassName();
 
     @Override
     public void createUser(String[] args) {
@@ -24,17 +26,16 @@ public class UserServiceImpl implements UserService {
         user.setLastName(Patterns.cleanWorldArgs(args[2]));
         user.setUserName(Patterns.cleanWorldArgs(args[3]));
 
-        DaoFactory daoFactory = new DaoFactoryImpl();
-        UserDao userDao1 = (UserDao) daoFactory.createDaoObject();
-
-        UserDao userDao = new UserDaoImpl();
+//        String className = getCurrentClassName();
+        UserDao userDao = (UserDao) daoFactory.createDaoObject(className);
         userDao.AddUserToDB(user.getName(), user.getLastName(), user.getUserName());
         logger.info("Was got data from configuration, method createUser");
     }
 
     @Override
     public void showAllUsers() {
-        UserDao userDao = new UserDaoImpl();
+        String className = getCurrentClassName();
+        UserDao userDao = (UserDao) daoFactory.createDaoObject(className);
         List<User> users = userDao.showAllusersFromDB();
         for (User u : users) {
             System.out.println("----------------------------------");
@@ -42,4 +43,5 @@ public class UserServiceImpl implements UserService {
         }
         logger.info("The method \"showAllUsers\"");
     }
+
 }
