@@ -1,9 +1,8 @@
-package org.daoTaskManager.daoFactory;
+package org.daoTaskManager.abstractFactory.daoFactory;
 
 
 import org.apache.log4j.Logger;
-import org.daoTaskManager.daoImplements.TaskDaoImpl;
-import org.daoTaskManager.daoImplements.UserDaoImpl;
+import org.daoTaskManager.abstractFactory.DaoFactory;
 
 import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
 

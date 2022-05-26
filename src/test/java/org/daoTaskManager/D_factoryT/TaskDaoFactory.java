@@ -1,6 +1,6 @@
 package org.daoTaskManager.D_factoryT;
 
-import org.daoTaskManager.dao.TaskDao;
+import org.daoTaskManager.abstractFactory.TaskDao;
 
 public interface TaskDaoFactory {
     TaskDao createUserDao();

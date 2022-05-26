@@ -1,7 +1,7 @@
 package org.daoTaskManager.D_factoryT;
 
-import org.daoTaskManager.dao.TaskDao;
-import org.daoTaskManager.daoImplements.TaskDaoImpl;
+import org.daoTaskManager.abstractFactory.TaskDao;
+import org.daoTaskManager.abstractFactory.daoFactory.TaskDaoImpl;
 
 public class TaskDaoFactoryImpl implements TaskDaoFactory {
     @Override

@@ -70,7 +70,7 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
-	at org.daoTaskManager.daoImplements.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
+	at org.daoTaskManager.abstractFactory.daoFactory.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
 	at org.daoTaskManager.servicesImpl.UserServiceImpl.createUser(UserServiceImpl.java:20)
 	at org.daoTaskManager.utils.ComandExecuter.filtrFromArgs(ComandExecuter.java:30)
 	at org.daoTaskManager.App.main(App.java:15)
@@ -91,3 +91,4 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 25/мая/2022 12:47:27,731- UserServiceImpl: The method "showAllUsers"
 25/мая/2022 13:01:15,337- UserServiceImpl: The method "showAllUsers"
 25/мая/2022 13:01:26,833- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 11:13:36,528- TaskServiceImpl: Method showAllTasksOnUserID is done

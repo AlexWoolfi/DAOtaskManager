@@ -1,8 +1,8 @@
-package org.daoTaskManager.daoImplements;
+package org.daoTaskManager.abstractFactory.daoFactory;
 
 import org.apache.log4j.Logger;
 import org.daoTaskManager.conectDB.SingeltonToDb;
-import org.daoTaskManager.dao.UserDao;
+import org.daoTaskManager.abstractFactory.UserDao;
 import org.daoTaskManager.entity.User;
 import org.postgresql.util.PSQLException;
 
