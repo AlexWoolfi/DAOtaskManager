@@ -433,3 +433,31 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 26/мая/2022 11:13:36,528- TaskServiceImpl: Method showAllTasksOnUserID is done
 26/мая/2022 11:13:36,528- ComandExecuter: showTasks is done
 26/мая/2022 11:13:36,528- ComandExecuter: showTasks is done
+26/мая/2022 12:24:43,104- App: Main is starred
+26/мая/2022 12:24:43,104- App: Main is starred
+26/мая/2022 12:24:43,120- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,120- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:43,136- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:43,136- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:43,667- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 12:24:43,667- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 12:24:43,667- ComandExecuter: showTasks is done
+26/мая/2022 12:24:43,667- ComandExecuter: showTasks is done
+26/мая/2022 12:24:49,887- App: Main is starred
+26/мая/2022 12:24:49,887- App: Main is starred
+26/мая/2022 12:24:49,887- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,887- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:49,902- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:49,902- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:50,294- UserServiceImpl: The method "showAllUsers"
+26/мая/2022 12:24:50,294- UserServiceImpl: The method "showAllUsers"
+26/мая/2022 12:24:50,294- ComandExecuter: showAllUsers is done
+26/мая/2022 12:24:50,294- ComandExecuter: showAllUsers is done

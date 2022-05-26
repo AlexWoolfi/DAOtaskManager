@@ -92,3 +92,5 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 25/мая/2022 13:01:15,337- UserServiceImpl: The method "showAllUsers"
 25/мая/2022 13:01:26,833- TaskServiceImpl: Method showAllTasksOnUserID is done
 26/мая/2022 11:13:36,528- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 12:24:43,667- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 12:24:50,294- UserServiceImpl: The method "showAllUsers"

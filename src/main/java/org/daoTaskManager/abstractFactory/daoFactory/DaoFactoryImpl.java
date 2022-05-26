@@ -10,11 +10,11 @@ public class DaoFactoryImpl implements DaoFactory {
     private static final Logger logger = Logger.getLogger(getCurrentClassName());
 
     @Override
-    public Object createDaoObject(String typeClass) {
-        if (typeClass.contains("UserServiceImpl")) {
+    public Object createDaoObject(String daoType) {
+        if (daoType.equals("User")) {
             logger.info("Was returned object UserDaoImpl");
             return new UserDaoImpl();
-        } else if (typeClass.contains("TaskServiceImpl")) {
+        } else if (daoType.equals("Task")) {
             logger.info("Was returned object TaskDaoImpl");
             return new TaskDaoImpl();
         } else {

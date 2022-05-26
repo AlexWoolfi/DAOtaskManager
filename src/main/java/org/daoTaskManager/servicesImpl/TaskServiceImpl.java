@@ -16,12 +16,20 @@ import static org.daoTaskManager.utils.ClassNameUtil.getCurrentClassName;
 
 public class TaskServiceImpl implements TaskService {
     Logger logger = Logger.getLogger(getCurrentClassName());
-    private static final DaoFactory daoFactory = new DaoFactoryImpl();
-    private String className = getCurrentClassName();
+    private UserDao userDao;
+    private TaskDao taskDao;
+
+    public TaskServiceImpl() {
+        DaoFactory factory = new DaoFactoryImpl();
+        this.userDao = (UserDao) factory.createDaoObject("User");
+        this.taskDao = (TaskDao) factory.createDaoObject("Task");
+    }
+
+
+
     @Override
     public void showAllTasksOnUserID(String[] args) {
         String userName = Patterns.cleanWorldArgs(args[1]);
-        TaskDao taskDao = (TaskDao) daoFactory.createDaoObject(className);
         List<Task> tasks = new ArrayList<>();
         tasks = taskDao.showTasksfromUnicUser(userName);
         for (Task t : tasks) {
@@ -33,9 +41,6 @@ public class TaskServiceImpl implements TaskService {
 
     @Override
     public void createTaskFromDB(String[] args) {
-        UserDao userDao = (UserDao) daoFactory.createDaoObject("UserServiceImpl");
-        TaskDao taskDao = (TaskDao) daoFactory.createDaoObject(className);
-
         String username = Patterns.cleanWorldArgs(args[1]);
         String taskName = Patterns.cleanWorldArgs(args[2]);
         String taskBody = Patterns.cleanWorldArgs(args[3]);
