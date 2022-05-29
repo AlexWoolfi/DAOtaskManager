@@ -1,11 +1,21 @@
 package org.daoTaskManager.entity;
 
+import lombok.Data;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name="users")
 public class User {
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name="id")
     private Long id;
+    @Column(name="userunicname")
     private String userName;
+    @Column(name="username")
     private String name;
+    @Column(name="userlastname")
     private String lastName;
 
 

@@ -1,0 +1,699 @@
+27/апр./2022 16:25:15,495- App: Main is starred
+27/апр./2022 16:25:15,495- App: +
+27/апр./2022 16:25:15,510- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:27:29,243- App: Main is starred
+27/апр./2022 16:27:29,243- App: +
+27/апр./2022 16:27:29,243- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:28:47,228- App: Main is starred
+27/апр./2022 16:28:47,228- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:37:56,276- App: Main is starred
+27/апр./2022 16:37:56,276- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:41:30,407- App: Main is starred
+27/апр./2022 16:41:30,409- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:41:40,645- App: Main is starred
+27/апр./2022 16:41:40,650- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:41:41,239- TaskDaoImpl: The connection was successful
+27/апр./2022 16:41:41,240- TaskDaoImpl: The connection was successful
+27/апр./2022 16:42:07,059- App: Main is starred
+27/апр./2022 16:42:07,062- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:42:07,593- TaskDaoImpl: The connection was successful
+27/апр./2022 16:44:10,665- App: Main is starred
+27/апр./2022 16:44:10,668- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:45:30,327- App: Main is starred
+27/апр./2022 16:45:30,330- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:51:51,707- App: Main is starred
+27/апр./2022 16:51:51,711- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:51:52,162- TaskDaoImpl: Connection failed
+27/апр./2022 16:52:31,979- App: Main is starred
+27/апр./2022 16:52:31,982- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:52:32,437- TaskDaoImpl: Connection failed
+27/апр./2022 16:52:53,890- App: Main is starred
+27/апр./2022 16:52:53,893- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:52:54,321- TaskDaoImpl: Connection failed
+27/апр./2022 16:53:08,723- App: Main is starred
+27/апр./2022 16:53:08,726- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:53:51,038- App: Main is starred
+27/апр./2022 16:53:51,041- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:55:13,336- App: Main is starred
+27/апр./2022 16:55:13,339- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:56:58,095- App: Main is starred
+27/апр./2022 16:56:58,098- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:57:11,216- App: Main is starred
+27/апр./2022 16:57:11,219- ComandExecuter: ComandExecuter is started
+27/апр./2022 16:57:11,665- TaskDaoImpl: Connection from method "addTaskToDB" failed
+29/апр./2022 10:02:04,819- App: Main is starred
+29/апр./2022 10:02:04,854- ComandExecuter: ComandExecuter is started
+29/апр./2022 10:58:28,126- App: Main is starred
+29/апр./2022 10:58:28,126- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:00:42,970- App: Main is starred
+29/апр./2022 11:00:42,970- App: Main is starred
+29/апр./2022 11:00:42,970- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:00:42,970- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:01:29,897- App: Main is starred
+29/апр./2022 11:01:29,897- App: Main is starred
+29/апр./2022 11:01:29,902- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:01:29,902- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:09:32,865- App: Main is starred
+29/апр./2022 11:09:32,865- App: Main is starred
+29/апр./2022 11:09:32,865- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:09:32,865- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:09:33,253- UserDaoImpl: Connection from method "AddUserToDB" failed
+org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at org.daoTaskManager.abstractFactory.daoFactory.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
+	at org.daoTaskManager.servicesImpl.UserServiceImpl.createUser(UserServiceImpl.java:20)
+	at org.daoTaskManager.utils.ComandExecuter.filtrFromArgs(ComandExecuter.java:30)
+	at org.daoTaskManager.App.main(App.java:15)
+29/апр./2022 11:09:33,253- UserDaoImpl: Connection from method "AddUserToDB" failed
+org.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
+	at org.daoTaskManager.abstractFactory.daoFactory.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
+	at org.daoTaskManager.servicesImpl.UserServiceImpl.createUser(UserServiceImpl.java:20)
+	at org.daoTaskManager.utils.ComandExecuter.filtrFromArgs(ComandExecuter.java:30)
+	at org.daoTaskManager.App.main(App.java:15)
+29/апр./2022 11:11:06,871- App: Main is starred
+29/апр./2022 11:11:06,871- App: Main is starred
+29/апр./2022 11:11:06,873- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:11:06,873- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:11:07,273- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:11:07,273- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:36:58,905- App: Main is starred
+29/апр./2022 11:36:58,905- App: Main is starred
+29/апр./2022 11:36:58,910- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:36:58,910- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:40:25,928- App: Main is starred
+29/апр./2022 11:40:25,928- App: Main is starred
+29/апр./2022 11:40:25,928- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:40:25,928- ComandExecuter: ComandExecuter is started
+29/апр/2022 11:40:59,807- App: Main is starred
+29/апр/2022 11:40:59,807- App: Main is starred
+29/апр/2022 11:40:59,807- ComandExecuter: ComandExecuter is started
+29/апр/2022 11:40:59,807- ComandExecuter: ComandExecuter is started
+29/апр/2022 11:41:00,495- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр/2022 11:41:00,495- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр/2022 11:41:25,608- App: Main is starred
+29/апр/2022 11:41:25,608- App: Main is starred
+29/апр/2022 11:41:25,608- ComandExecuter: ComandExecuter is started
+29/апр/2022 11:41:25,608- ComandExecuter: ComandExecuter is started
+29/апр/2022 11:41:26,016- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр/2022 11:41:26,016- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test1)" уже существует.
+29/апр./2022 11:46:41,278- App: Main is starred
+29/апр./2022 11:46:41,278- App: Main is starred
+29/апр./2022 11:46:41,278- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:46:41,278- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:46:41,654- UserServiceImpl: The method "showAllUsers"
+29/апр./2022 11:46:41,654- UserServiceImpl: The method "showAllUsers"
+29/апр./2022 11:46:59,291- App: Main is starred
+29/апр./2022 11:46:59,291- App: Main is starred
+29/апр./2022 11:46:59,291- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:46:59,291- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:46:59,661- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:46:59,661- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:46:59,661- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:46:59,661- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:54:50,782- App: Main is starred
+29/апр./2022 11:54:50,782- App: Main is starred
+29/апр./2022 11:54:50,797- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:54:50,797- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:54:51,166- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:54:51,166- UserDaoImpl: Connection from method "AddUserToDB" failedorg.postgresql.util.PSQLException: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(Test2)" уже существует.
+29/апр./2022 11:54:51,166- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:54:51,166- UserServiceImpl: Was got data from configuration, method createUser
+29/апр./2022 11:54:55,861- App: Main is starred
+29/апр./2022 11:54:55,861- App: Main is starred
+29/апр./2022 11:54:55,877- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:54:55,877- ComandExecuter: ComandExecuter is started
+29/апр./2022 11:54:56,312- TaskServiceImpl: Method showAllTasksOnUserID is done
+29/апр./2022 11:54:56,312- TaskServiceImpl: Method showAllTasksOnUserID is done
+29/апр./2022 12:03:22,648- App: Main is starred
+29/апр./2022 12:03:22,648- App: Main is starred
+29/апр./2022 12:03:22,648- ComandExecuter: ComandExecuter is started
+29/апр./2022 12:03:22,648- ComandExecuter: ComandExecuter is started
+29/апр./2022 12:03:23,078- TaskServiceImpl: Method showAllTasksOnUserID is done
+29/апр./2022 12:03:23,078- TaskServiceImpl: Method showAllTasksOnUserID is done
+29/апр./2022 12:03:23,078- ComandExecuter: showTasks is done
+29/апр./2022 12:03:23,078- ComandExecuter: showTasks is done
+30/апр./2022 15:50:29,849- App: Main is starred
+30/апр./2022 15:50:29,849- App: Main is starred
+30/апр./2022 15:50:29,865- ComandExecuter: ComandExecuter is started
+30/апр./2022 15:50:29,865- ComandExecuter: ComandExecuter is started
+30/апр./2022 15:50:29,865- ComandExecuter: Command not use, try again
+30/апр./2022 15:50:29,865- ComandExecuter: Command not use, try again
+30/апр./2022 16:00:24,535- App: Main is starred
+30/апр./2022 16:00:24,535- App: Main is starred
+30/апр./2022 16:00:24,535- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:00:24,535- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:00:24,535- ComandExecuter: Command not use, try again
+30/апр./2022 16:00:24,535- ComandExecuter: Command not use, try again
+30/апр./2022 16:06:07,847- App: Main is starred
+30/апр./2022 16:06:07,847- App: Main is starred
+30/апр./2022 16:06:07,847- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:06:07,847- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:06:07,863- ComandExecuter: Command not use, try again
+30/апр./2022 16:06:07,863- ComandExecuter: Command not use, try again
+30/апр./2022 16:06:33,217- App: Main is starred
+30/апр./2022 16:06:33,217- App: Main is starred
+30/апр./2022 16:06:33,217- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:06:33,217- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:06:33,217- ComandExecuter: Command not use, try again
+30/апр./2022 16:06:33,217- ComandExecuter: Command not use, try again
+30/апр./2022 16:06:48,635- App: Main is starred
+30/апр./2022 16:06:48,635- App: Main is starred
+30/апр./2022 16:06:48,635- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:06:48,635- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:06:48,635- ComandExecuter: Command not use, try again
+30/апр./2022 16:06:48,635- ComandExecuter: Command not use, try again
+30/апр./2022 16:23:22,578- App: Main is starred
+30/апр./2022 16:23:22,578- App: Main is starred
+30/апр./2022 16:23:22,578- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:23:22,578- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:23:22,578- ComandExecuter: Command not use, try again
+30/апр./2022 16:23:22,578- ComandExecuter: Command not use, try again
+30/апр./2022 16:24:00,208- App: Main is starred
+30/апр./2022 16:24:00,208- App: Main is starred
+30/апр./2022 16:24:00,208- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:24:00,208- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:24:00,208- ComandExecuter: Command not use, try again
+30/апр./2022 16:24:00,208- ComandExecuter: Command not use, try again
+30/апр./2022 16:25:22,957- App: Main is starred
+30/апр./2022 16:25:22,957- App: Main is starred
+30/апр./2022 16:25:22,972- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:25:22,972- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:25:22,972- ComandExecuter: Command not use, try again
+30/апр./2022 16:25:22,972- ComandExecuter: Command not use, try again
+30/апр./2022 16:26:26,925- App: Main is starred
+30/апр./2022 16:26:26,925- App: Main is starred
+30/апр./2022 16:26:26,941- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:26:26,941- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:26:26,941- ComandExecuter: Command not use, try again
+30/апр./2022 16:26:26,941- ComandExecuter: Command not use, try again
+30/апр./2022 16:27:06,179- App: Main is starred
+30/апр./2022 16:27:06,179- App: Main is starred
+30/апр./2022 16:27:06,179- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:27:06,179- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:27:06,179- ComandExecuter: Command not use, try again
+30/апр./2022 16:27:06,179- ComandExecuter: Command not use, try again
+30/апр./2022 16:33:24,858- App: Main is starred
+30/апр./2022 16:33:24,858- App: Main is starred
+30/апр./2022 16:33:24,858- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:33:24,858- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:33:24,858- ComandExecuter: Command not use, try again
+30/апр./2022 16:33:24,858- ComandExecuter: Command not use, try again
+30/апр./2022 16:37:15,263- App: Main is starred
+30/апр./2022 16:37:15,263- App: Main is starred
+30/апр./2022 16:37:15,263- App: class org.daoTaskManager.App
+30/апр./2022 16:37:15,263- App: class org.daoTaskManager.App
+30/апр./2022 16:37:15,278- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:37:15,278- ComandExecuter: ComandExecuter is started
+30/апр./2022 16:37:15,278- ComandExecuter: Command not use, try again
+30/апр./2022 16:37:15,278- ComandExecuter: Command not use, try again
+25/мая/2022 10:07:40,960- App: Main is starred
+25/мая/2022 10:07:40,960- App: Main is starred
+25/мая/2022 10:09:13,981- App: Main is starred
+25/мая/2022 10:09:13,981- App: Main is starred
+25/мая/2022 10:09:56,816- App: Main is starred
+25/мая/2022 10:09:56,816- App: Main is starred
+25/мая/2022 10:10:06,163- App: Main is starred
+25/мая/2022 10:10:06,163- App: Main is starred
+25/мая/2022 10:11:22,496- App: Main is starred
+25/мая/2022 10:11:22,496- App: Main is starred
+25/мая/2022 10:11:22,523- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:11:22,523- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:11:23,070- TaskServiceImpl: Method showAllTasksOnUserID is done
+25/мая/2022 10:11:23,070- TaskServiceImpl: Method showAllTasksOnUserID is done
+25/мая/2022 10:11:23,070- ComandExecuter: showTasks is done
+25/мая/2022 10:11:23,070- ComandExecuter: showTasks is done
+25/мая/2022 10:13:30,342- App: Main is starred
+25/мая/2022 10:13:30,342- App: Main is starred
+25/мая/2022 10:13:30,352- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:13:30,352- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:16:10,166- App: Main is starred
+25/мая/2022 10:16:10,166- App: Main is starred
+25/мая/2022 10:16:10,170- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:16:10,170- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:33:29,736- App: Main is starred
+25/мая/2022 10:33:29,736- App: Main is starred
+25/мая/2022 10:33:29,741- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:33:29,741- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:34:37,266- App: Main is starred
+25/мая/2022 10:34:37,266- App: Main is starred
+25/мая/2022 10:34:37,268- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:34:37,268- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:34:57,687- App: Main is starred
+25/мая/2022 10:34:57,687- App: Main is starred
+25/мая/2022 10:34:57,690- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:34:57,690- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:35:02,473- App: Main is starred
+25/мая/2022 10:35:02,473- App: Main is starred
+25/мая/2022 10:35:02,504- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:35:02,504- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:35:48,459- App: Main is starred
+25/мая/2022 10:35:48,459- App: Main is starred
+25/мая/2022 10:35:48,466- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:35:48,466- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:36:33,056- App: Main is starred
+25/мая/2022 10:36:33,056- App: Main is starred
+25/мая/2022 10:36:33,061- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:36:33,061- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:36:51,709- App: Main is starred
+25/мая/2022 10:36:51,709- App: Main is starred
+25/мая/2022 10:36:51,720- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:36:51,720- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:37:14,735- App: Main is starred
+25/мая/2022 10:37:14,735- App: Main is starred
+25/мая/2022 10:37:14,743- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:37:14,743- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:37:29,333- App: Main is starred
+25/мая/2022 10:37:29,333- App: Main is starred
+25/мая/2022 10:37:29,340- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:37:29,340- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:39:02,311- App: Main is starred
+25/мая/2022 10:39:02,311- App: Main is starred
+25/мая/2022 10:39:02,317- ComandExecuter: ComandExecuter is started
+25/мая/2022 10:39:02,317- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:06:08,027- App: Main is starred
+25/мая/2022 11:06:08,027- App: Main is starred
+25/мая/2022 11:06:08,030- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:06:08,030- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:08:14,394- App: Main is starred
+25/мая/2022 11:08:14,394- App: Main is starred
+25/мая/2022 11:08:14,413- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:08:14,413- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:09:18,853- App: Main is starred
+25/мая/2022 11:09:18,853- App: Main is starred
+25/мая/2022 11:09:18,863- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:09:18,863- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:09:31,428- App: Main is starred
+25/мая/2022 11:09:31,428- App: Main is starred
+25/мая/2022 11:09:31,432- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:09:31,432- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:11:00,954- App: Main is starred
+25/мая/2022 11:11:00,954- App: Main is starred
+25/мая/2022 11:11:00,964- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:11:00,964- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:11:59,797- App: Main is starred
+25/мая/2022 11:11:59,797- App: Main is starred
+25/мая/2022 11:11:59,807- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:11:59,807- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:12:19,674- App: Main is starred
+25/мая/2022 11:12:19,674- App: Main is starred
+25/мая/2022 11:12:19,677- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:12:19,677- ComandExecuter: ComandExecuter is started
+25/мая/2022 11:18:58,000- App: Main is starred
+25/мая/2022 11:18:58,000- App: Main is starred
+25/мая/2022 11:21:24,874- App: Main is starred
+25/мая/2022 11:21:24,874- App: Main is starred
+25/мая/2022 11:36:46,618- App: Main is starred
+25/мая/2022 11:36:46,618- App: Main is starred
+25/мая/2022 11:36:46,632- DaoFactoryImpl: No object
+25/мая/2022 11:36:46,632- DaoFactoryImpl: No object
+25/мая/2022 11:38:56,481- App: Main is starred
+25/мая/2022 11:38:56,481- App: Main is starred
+25/мая/2022 11:38:56,491- DaoFactoryImpl: No object
+25/мая/2022 11:38:56,491- DaoFactoryImpl: No object
+25/мая/2022 11:49:14,958- App: Main is starred
+25/мая/2022 11:49:14,958- App: Main is starred
+25/мая/2022 11:59:25,237- App: Main is starred
+25/мая/2022 11:59:25,237- App: Main is starred
+25/мая/2022 12:18:07,385- App: Main is starred
+25/мая/2022 12:18:07,385- App: Main is starred
+25/мая/2022 12:18:07,397- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:18:07,397- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:18:07,404- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:18:07,404- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:18:07,799- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:18:07,799- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:18:07,800- ComandExecuter: showAllUsers is done
+25/мая/2022 12:18:07,800- ComandExecuter: showAllUsers is done
+25/мая/2022 12:23:19,224- App: Main is starred
+25/мая/2022 12:23:19,224- App: Main is starred
+25/мая/2022 12:23:19,245- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:23:19,245- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:23:19,255- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 12:23:19,255- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 12:24:06,183- App: Main is starred
+25/мая/2022 12:24:06,183- App: Main is starred
+25/мая/2022 12:24:06,187- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:24:06,187- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:24:06,191- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:24:06,191- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:24:06,576- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:24:06,576- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:24:06,577- ComandExecuter: showAllUsers is done
+25/мая/2022 12:24:06,577- ComandExecuter: showAllUsers is done
+25/мая/2022 12:24:32,071- App: Main is starred
+25/мая/2022 12:24:32,071- App: Main is starred
+25/мая/2022 12:24:32,081- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:24:32,081- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:24:32,087- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:24:32,087- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:24:32,479- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:24:32,479- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:24:32,479- ComandExecuter: showAllUsers is done
+25/мая/2022 12:24:32,479- ComandExecuter: showAllUsers is done
+25/мая/2022 12:25:29,523- App: Main is starred
+25/мая/2022 12:25:29,523- App: Main is starred
+25/мая/2022 12:25:29,528- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:25:29,528- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:25:29,533- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 12:25:29,533- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 12:33:53,004- App: Main is starred
+25/мая/2022 12:33:53,004- App: Main is starred
+25/мая/2022 12:33:53,015- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:33:53,015- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:33:53,020- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:33:53,020- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:33:53,023- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 12:33:53,023- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 12:33:53,603- TaskServiceImpl: Method createTaskFromDB is done
+25/мая/2022 12:33:53,603- TaskServiceImpl: Method createTaskFromDB is done
+25/мая/2022 12:33:53,603- ComandExecuter: addTask is done
+25/мая/2022 12:33:53,603- ComandExecuter: addTask is done
+25/мая/2022 12:47:27,325- App: Main is starred
+25/мая/2022 12:47:27,325- App: Main is starred
+25/мая/2022 12:47:27,354- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:47:27,354- ComandExecuter: ComandExecuter is started
+25/мая/2022 12:47:27,359- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:47:27,359- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 12:47:27,731- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:47:27,731- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 12:47:27,731- ComandExecuter: showAllUsers is done
+25/мая/2022 12:47:27,731- ComandExecuter: showAllUsers is done
+25/мая/2022 13:01:14,928- App: Main is starred
+25/мая/2022 13:01:14,928- App: Main is starred
+25/мая/2022 13:01:14,931- ComandExecuter: ComandExecuter is started
+25/мая/2022 13:01:14,931- ComandExecuter: ComandExecuter is started
+25/мая/2022 13:01:14,935- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 13:01:14,935- DaoFactoryImpl: Was returned object UserDaoImpl
+25/мая/2022 13:01:15,337- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 13:01:15,337- UserServiceImpl: The method "showAllUsers"
+25/мая/2022 13:01:15,338- ComandExecuter: showAllUsers is done
+25/мая/2022 13:01:15,338- ComandExecuter: showAllUsers is done
+25/мая/2022 13:01:26,291- App: Main is starred
+25/мая/2022 13:01:26,291- App: Main is starred
+25/мая/2022 13:01:26,294- ComandExecuter: ComandExecuter is started
+25/мая/2022 13:01:26,294- ComandExecuter: ComandExecuter is started
+25/мая/2022 13:01:26,300- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 13:01:26,300- DaoFactoryImpl: Was returned object TaskDaoImpl
+25/мая/2022 13:01:26,833- TaskServiceImpl: Method showAllTasksOnUserID is done
+25/мая/2022 13:01:26,833- TaskServiceImpl: Method showAllTasksOnUserID is done
+25/мая/2022 13:01:26,833- ComandExecuter: showTasks is done
+25/мая/2022 13:01:26,833- ComandExecuter: showTasks is done
+26/мая/2022 11:13:35,967- App: Main is starred
+26/мая/2022 11:13:35,967- App: Main is starred
+26/мая/2022 11:13:35,999- ComandExecuter: ComandExecuter is started
+26/мая/2022 11:13:35,999- ComandExecuter: ComandExecuter is started
+26/мая/2022 11:13:36,005- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 11:13:36,005- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 11:13:36,528- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 11:13:36,528- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 11:13:36,528- ComandExecuter: showTasks is done
+26/мая/2022 11:13:36,528- ComandExecuter: showTasks is done
+26/мая/2022 12:24:43,104- App: Main is starred
+26/мая/2022 12:24:43,104- App: Main is starred
+26/мая/2022 12:24:43,120- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,120- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:43,136- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:43,136- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:43,136- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:43,667- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 12:24:43,667- TaskServiceImpl: Method showAllTasksOnUserID is done
+26/мая/2022 12:24:43,667- ComandExecuter: showTasks is done
+26/мая/2022 12:24:43,667- ComandExecuter: showTasks is done
+26/мая/2022 12:24:49,887- App: Main is starred
+26/мая/2022 12:24:49,887- App: Main is starred
+26/мая/2022 12:24:49,887- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,887- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object UserDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:49,902- DaoFactoryImpl: Was returned object TaskDaoImpl
+26/мая/2022 12:24:49,902- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:49,902- ComandExecuter: ComandExecuter is started
+26/мая/2022 12:24:50,294- UserServiceImpl: The method "showAllUsers"
+26/мая/2022 12:24:50,294- UserServiceImpl: The method "showAllUsers"
+26/мая/2022 12:24:50,294- ComandExecuter: showAllUsers is done
+26/мая/2022 12:24:50,294- ComandExecuter: showAllUsers is done
+28/мая/2022 16:17:02,041- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:17:02,041- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:23:59,606- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:23:59,606- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:24:57,578- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:24:57,578- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:29:10,680- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:29:10,680- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:36:44,055- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:36:44,055- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:36:44,060- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:36:44,060- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:37:43,162- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:37:43,162- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:37:43,162- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:37:43,162- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:38:40,107- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:38:40,107- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:38:40,112- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:38:40,112- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:38:49,987- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:38:49,987- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:38:49,987- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:38:49,987- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:40:20,165- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:40:20,165- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:40:20,169- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:40:20,169- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:45:43,123- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:45:43,123- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:45:43,123- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.=, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:45:43,123- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.=, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:46:21,065- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:46:21,065- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:46:21,065- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.=, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:46:21,065- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.=, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true}
+28/мая/2022 16:49:05,739- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:49:05,739- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:49:05,755- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+28/мая/2022 16:49:05,755- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=oracle.jdbc.driver.OracleDriver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+28/мая/2022 16:53:34,473- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:53:34,473- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:53:34,473- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+28/мая/2022 16:53:34,473- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+28/мая/2022 16:57:40,253- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:57:40,253- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+28/мая/2022 16:57:40,253- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+28/мая/2022 16:57:40,253- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 13:47:26,788- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 13:47:26,788- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 13:47:26,797- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 13:47:26,797- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 13:54:19,378- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 13:54:19,378- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 13:54:19,382- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 13:54:19,382- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 13:54:19,938- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 13:54:19,938- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 13:54:20,190- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 13:54:20,190- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 13:54:20,201- pooling: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 13:54:20,201- pooling: HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 13:54:20,202- pooling: HHH10001001: Connection properties: {password=****, useUnicode=true, CharSet=utf8, characterEncoding=UTF-8, user=postgres}
+29/мая/2022 13:54:20,202- pooling: HHH10001001: Connection properties: {password=****, useUnicode=true, CharSet=utf8, characterEncoding=UTF-8, user=postgres}
+29/мая/2022 13:54:20,202- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 13:54:20,202- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 13:54:20,205- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 13:54:20,205- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 13:56:15,259- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 13:56:15,259- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 13:56:15,263- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 13:56:15,263- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 13:56:15,731- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 13:56:15,731- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 13:56:15,961- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 13:56:15,961- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 13:56:15,969- pooling: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 13:56:15,969- pooling: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 13:56:15,969- pooling: HHH10001001: Connection properties: {password=****, useUnicode=true, CharSet=utf8, characterEncoding=UTF-8, user=postgres}
+29/мая/2022 13:56:15,969- pooling: HHH10001001: Connection properties: {password=****, useUnicode=true, CharSet=utf8, characterEncoding=UTF-8, user=postgres}
+29/мая/2022 13:56:15,970- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 13:56:15,970- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 13:56:15,973- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 13:56:15,973- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:19:07,564- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:19:07,564- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:19:07,580- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:19:07,580- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL10Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:19:08,066- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:19:08,066- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:19:08,285- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:19:08,285- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:19:08,300- pooling: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:19:08,300- pooling: HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:19:08,300- pooling: HHH10001001: Connection properties: {password=****, useUnicode=true, CharSet=utf8, characterEncoding=UTF-8, user=postgres}
+29/мая/2022 14:19:08,300- pooling: HHH10001001: Connection properties: {password=****, useUnicode=true, CharSet=utf8, characterEncoding=UTF-8, user=postgres}
+29/мая/2022 14:19:08,300- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:19:08,300- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:19:08,300- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:19:08,300- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:43:43,596- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:43:43,596- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:43:43,600- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:43:43,600- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:43:43,803- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:43:43,803- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:43:44,048- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:43:44,048- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:43:44,055- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:43:44,055- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:43:44,056- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 14:43:44,056- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 14:43:44,056- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:43:44,056- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:43:44,060- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:43:44,060- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:43:44,275- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 14:43:44,275- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 14:43:44,487- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:43:44,487- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:54:47,114- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:54:47,114- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:54:47,118- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:54:47,118- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:54:47,333- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:54:47,333- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:54:47,581- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:54:47,581- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:54:47,588- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:54:47,588- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:54:47,589- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 14:54:47,589- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 14:54:47,589- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:54:47,589- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:54:47,592- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:54:47,592- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:54:47,816- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 14:54:47,816- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 14:55:49,591- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:55:49,591- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 14:55:49,595- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:55:49,595- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 14:55:49,796- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:55:49,796- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 14:55:50,035- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:55:50,035- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 14:55:50,044- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:55:50,044- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:55:50,045- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 14:55:50,045- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 14:55:50,045- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:55:50,045- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 14:55:50,049- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:55:50,049- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 14:55:50,260- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 14:55:50,260- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 14:55:50,923- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 14:55:50,923- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:01:54,550- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:01:54,550- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:01:54,554- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:01:54,554- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:01:54,757- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:01:54,757- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:01:55,011- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:01:55,011- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:01:55,018- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:01:55,018- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:01:55,019- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:01:55,019- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:01:55,019- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:01:55,019- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:01:55,023- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:01:55,023- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:01:55,249- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:01:55,249- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:01:55,903- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:01:55,903- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:03:52,933- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:03:52,933- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:03:52,937- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:03:52,937- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:03:53,162- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:03:53,162- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:03:53,418- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:03:53,418- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:03:53,425- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:03:53,425- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:03:53,426- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:03:53,426- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:03:53,426- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:03:53,426- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:03:53,430- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:03:53,430- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:03:53,651- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:03:53,651- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:03:54,340- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:03:54,340- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:05:32,591- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:05:32,591- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:05:32,595- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:05:32,595- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:05:32,796- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:05:32,796- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:05:33,026- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:05:33,026- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:05:33,033- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:05:33,033- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:05:33,034- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:05:33,034- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:05:33,034- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:05:33,034- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:05:33,037- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:05:33,037- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:05:33,247- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:05:33,247- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:06:34,083- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:06:34,083- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+29/мая/2022 15:06:34,086- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:06:34,086- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+29/мая/2022 15:06:34,291- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:06:34,291- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+29/мая/2022 15:06:34,535- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:06:34,535- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+29/мая/2022 15:06:34,544- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:06:34,544- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:06:34,544- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:06:34,544- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+29/мая/2022 15:06:34,545- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:06:34,545- pooling: HHH10001003: Autocommit mode: false
+29/мая/2022 15:06:34,548- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:06:34,548- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+29/мая/2022 15:06:34,752- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:06:34,752- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+29/мая/2022 15:06:35,381- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+29/мая/2022 15:06:35,381- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
