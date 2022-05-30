@@ -1,6 +1,6 @@
 //package org.daoTaskManager.test;
 //
-//import org.daoTaskManager.abstractFactory.TaskDao;
+//import org.daoTaskManager.abstractFactory.intrfacesForFabrics.TaskDao;
 //import org.daoTaskManager.daoFactory.TaskDaoFactory;
 //import org.daoTaskManager.daoFactory.TaskDaoFactoryImpl;
 //

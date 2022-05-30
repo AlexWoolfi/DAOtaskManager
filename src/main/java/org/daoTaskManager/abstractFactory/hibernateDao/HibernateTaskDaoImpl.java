@@ -1,6 +1,6 @@
 package org.daoTaskManager.abstractFactory.hibernateDao;
 
-import org.daoTaskManager.abstractFactory.TaskDao;
+import org.daoTaskManager.abstractFactory.intrfacesForFabrics.TaskDao;
 import org.daoTaskManager.entity.Task;
 
 import java.util.List;

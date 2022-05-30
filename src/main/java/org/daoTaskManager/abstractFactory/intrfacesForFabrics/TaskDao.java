@@ -1,4 +1,4 @@
-package org.daoTaskManager.abstractFactory;
+package org.daoTaskManager.abstractFactory.intrfacesForFabrics;
 
 import org.daoTaskManager.entity.Task;
 

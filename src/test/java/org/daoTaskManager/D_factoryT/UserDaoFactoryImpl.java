@@ -1,7 +1,7 @@
 package org.daoTaskManager.D_factoryT;
 
-import org.daoTaskManager.abstractFactory.UserDao;
-import org.daoTaskManager.abstractFactory.daoFactory.UserDaoImpl;
+import org.daoTaskManager.abstractFactory.intrfacesForFabrics.UserDao;
+import org.daoTaskManager.abstractFactory.dao.UserDaoImpl;
 
 public class UserDaoFactoryImpl implements UserDaoFactory {
     @Override

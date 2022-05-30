@@ -1,9 +1,9 @@
 package org.daoTaskManager.servicesImpl;
 
 import org.apache.log4j.Logger;
-import org.daoTaskManager.abstractFactory.UserDao;
-import org.daoTaskManager.abstractFactory.DaoFactory;
-import org.daoTaskManager.abstractFactory.daoFactory.DaoFactoryImpl;
+import org.daoTaskManager.abstractFactory.intrfacesForFabrics.UserDao;
+import org.daoTaskManager.abstractFactory.intrfacesForFabrics.DaoFactory;
+import org.daoTaskManager.abstractFactory.dao.DaoFactoryImpl;
 import org.daoTaskManager.entity.User;
 import org.daoTaskManager.sevices.UserService;
 import org.daoTaskManager.utils.Patterns;

@@ -20,7 +20,7 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
 	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:166)
 	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:134)
-	at org.daoTaskManager.abstractFactory.daoFactory.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
+	at org.daoTaskManager.abstractFactory.dao.UserDaoImpl.AddUserToDB(UserDaoImpl.java:89)
 	at org.daoTaskManager.servicesImpl.UserServiceImpl.createUser(UserServiceImpl.java:20)
 	at org.daoTaskManager.utils.ComandExecuter.filtrFromArgs(ComandExecuter.java:30)
 	at org.daoTaskManager.App.main(App.java:15)
