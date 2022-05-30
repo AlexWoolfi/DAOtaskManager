@@ -448,3 +448,44 @@ org.postgresql.util.PSQLException: ОШИБКА: повторяющееся зн
 29/мая/2022 15:06:34,548- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
 29/мая/2022 15:06:34,752- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
 29/мая/2022 15:06:35,381- pooling: HHH10001008: Cleaning up connection pool [jdbc:postgresql://localhost:5050/DaoTaskManager]
+30/мая/2022 17:02:41,305- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+30/мая/2022 17:02:41,310- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+30/мая/2022 17:14:55,375- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+30/мая/2022 17:14:55,382- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+30/мая/2022 17:14:55,607- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+30/мая/2022 17:14:55,857- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+30/мая/2022 17:14:55,865- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+30/мая/2022 17:14:55,865- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+30/мая/2022 17:14:55,866- pooling: HHH10001003: Autocommit mode: false
+30/мая/2022 17:14:55,869- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+30/мая/2022 17:14:56,080- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+30/мая/2022 17:16:37,482- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+30/мая/2022 17:16:37,490- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+30/мая/2022 17:16:37,706- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+30/мая/2022 17:16:37,950- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+30/мая/2022 17:16:37,957- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+30/мая/2022 17:16:37,958- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+30/мая/2022 17:16:37,958- pooling: HHH10001003: Autocommit mode: false
+30/мая/2022 17:16:37,961- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+30/мая/2022 17:16:38,169- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+30/мая/2022 17:20:20,224- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+30/мая/2022 17:20:20,228- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+30/мая/2022 17:20:20,444- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+30/мая/2022 17:20:20,703- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+30/мая/2022 17:20:20,711- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+30/мая/2022 17:20:20,712- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+30/мая/2022 17:20:20,712- pooling: HHH10001003: Autocommit mode: false
+30/мая/2022 17:20:20,716- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+30/мая/2022 17:20:20,956- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+30/мая/2022 17:20:21,563- SqlExceptionHelper: SQL Error: 0, SQLState: 23505
+30/мая/2022 17:20:21,564- SqlExceptionHelper: ОШИБКА: повторяющееся значение ключа нарушает ограничение уникальности "users_userunicname_key"
+  Подробности: Ключ "(userunicname)=(testHiberMethod)" уже существует.
+30/мая/2022 17:21:08,455- Version: HHH000412: Hibernate ORM core version 5.6.9.Final
+30/мая/2022 17:21:08,460- Environment: HHH000205: Loaded properties from resource hibernate.properties: {hibernate.connection.driver_class=org.postgresql.Driver, hibernate.format_sql=true, hibernate.dialect=org.hibernate.dialect.PostgreSQL95Dialect, hibernate.connection.password=****, hibernate.connection.username=postgres, hibernate.connection.url=jdbc:postgresql://localhost:5050/DaoTaskManager, hibernate.bytecode.use_reflection_optimizer=false, hibernate.show_sql=true, hibernate.current_session_context_class=thread}
+30/мая/2022 17:21:08,679- Version: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+30/мая/2022 17:21:08,943- pooling: HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+30/мая/2022 17:21:08,950- pooling: HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5050/DaoTaskManager]
+30/мая/2022 17:21:08,951- pooling: HHH10001001: Connection properties: {password=****, user=postgres}
+30/мая/2022 17:21:08,951- pooling: HHH10001003: Autocommit mode: false
+30/мая/2022 17:21:08,954- DriverManagerConnectionProviderImpl: HHH000115: Hibernate connection pool size: 20 (min=1)
+30/мая/2022 17:21:09,170- Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
