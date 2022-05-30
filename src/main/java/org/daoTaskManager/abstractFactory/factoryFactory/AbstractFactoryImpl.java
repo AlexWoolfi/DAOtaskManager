@@ -1,9 +1,9 @@
-package org.daoTaskManager.abstractFactory.FactoryFactory;
+package org.daoTaskManager.abstractFactory.factoryFactory;
 
 import org.apache.log4j.Logger;
-import org.daoTaskManager.abstractFactory.intrfacesForFabrics.AbstractFactory;
+import org.daoTaskManager.abstractFactory.intrfacesForFactories.AbstractFactory;
 import org.daoTaskManager.abstractFactory.dao.DaoFactoryImpl;
-import org.daoTaskManager.abstractFactory.intrfacesForFabrics.DaoFactory;
+import org.daoTaskManager.abstractFactory.intrfacesForFactories.DaoFactory;
 import org.daoTaskManager.abstractFactory.hibernateDao.HibernateDaoFactory;
 import org.daoTaskManager.abstractFactory.jdbcDao.JdbcDaoFactory;
 

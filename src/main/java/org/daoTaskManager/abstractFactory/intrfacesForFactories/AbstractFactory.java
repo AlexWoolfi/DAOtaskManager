@@ -1,4 +1,4 @@
-package org.daoTaskManager.abstractFactory.intrfacesForFabrics;
+package org.daoTaskManager.abstractFactory.intrfacesForFactories;
 
 public interface AbstractFactory {
     public Object getFactory(String typeOfFactory);

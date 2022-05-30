@@ -1,7 +1,6 @@
-package org.daoTaskManager.abstractFactory.intrfacesForFabrics;
+package org.daoTaskManager.abstractFactory.intrfacesForFactories;
 
 import org.daoTaskManager.entity.User;
-import org.postgresql.util.PSQLException;
 
 import java.util.List;
 
