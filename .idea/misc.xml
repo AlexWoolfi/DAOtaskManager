@@ -7,6 +7,14 @@
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/AUtils/pom.xml" />
+        <option value="$PROJECT_DIR$/ConnectionToDB/pom.xml" />
+        <option value="$PROJECT_DIR$/Factories/pom.xml" />
+        <option value="$PROJECT_DIR$/Utils/pom.xml" />
+      </set>
+    </option>
   </component>
   <component name="ProjectResources">
     <resource url="http://jakarta.apache.org/log4j/" location="$PROJECT_DIR$" />
